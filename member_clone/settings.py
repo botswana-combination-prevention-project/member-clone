@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'edc_protocol.apps.AppConfig',
     'edc_registration.apps.AppConfig',
     'survey.apps.AppConfig',
-    'member_clone.apps.EdcMapAppConfig',
     'member_clone.apps.AppConfig',
 ]
 
