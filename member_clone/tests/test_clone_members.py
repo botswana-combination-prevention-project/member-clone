@@ -12,7 +12,7 @@ from survey.tests import SurveyTestHelper
 from survey.tests.surveys import survey_one, survey_two, survey_three
 
 from ..clone import Clone, CloneMembersExistError, CloneAmbiguousOptionsError
-from ..clone_model_mixin import CloneRegisteredSubjectError, CloneReportDatetimeError
+from ..model_mixins import CloneRegisteredSubjectError, CloneReportDatetimeError
 from .models import HouseholdMember, HouseholdStructure, Household
 
 fake = Faker()

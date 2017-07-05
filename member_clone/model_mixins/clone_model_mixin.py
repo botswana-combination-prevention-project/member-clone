@@ -7,9 +7,9 @@ from edc_base.utils import age, get_utcnow
 from edc_constants.choices import YES_NO_NA, ALIVE
 from edc_registration.models import RegisteredSubject
 
-from .choices import DETAILS_CHANGE_REASON
-from .constants import HEAD_OF_HOUSEHOLD
-from .clone import CloneMembersExistError
+from ..choices import DETAILS_CHANGE_REASON
+from ..constants import HEAD_OF_HOUSEHOLD
+from ..clone import CloneMembersExistError
 
 
 class CloneRegisteredSubjectError(Exception):

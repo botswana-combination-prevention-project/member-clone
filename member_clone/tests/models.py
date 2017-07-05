@@ -6,8 +6,7 @@ from edc_base.utils import get_utcnow
 from survey.iterators import SurveyScheduleIterator
 from survey.model_mixins import SurveyScheduleModelMixin
 
-from ..clone_model_mixin import CloneModelMixin
-from ..next_model_mixin import NextMemberModelMixin
+from ..model_mixins import CloneModelMixin, NextMemberModelMixin
 
 
 class Household(BaseUuidModel):

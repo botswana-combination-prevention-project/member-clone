@@ -1,12 +1,13 @@
 from django.test import TestCase, tag
 from faker import Faker
+from uuid import uuid4
+
+from survey.iterators import SurveyScheduleIterator
 from survey.site_surveys import site_surveys
 from survey.tests import SurveyTestHelper
 from survey.tests.surveys import survey_two, survey_one, survey_three
-from uuid import uuid4
 
 from .models import HouseholdStructure, HouseholdMember, Household
-from survey.iterators import SurveyScheduleIterator
 
 fake = Faker()
 
