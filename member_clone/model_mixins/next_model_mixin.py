@@ -39,3 +39,6 @@ class NextMemberModelMixin(models.Model):
             else:
                 break
         return model_obj
+
+    class Meta:
+        abstract = True
