@@ -31,7 +31,8 @@ class HouseholdStructure(SurveyScheduleModelMixin, BaseUuidModel):
         return next_obj
 
 
-class HouseholdMember(SurveyScheduleModelMixin, CloneModelMixin, NextMemberModelMixin, BaseUuidModel):
+class HouseholdMember(SurveyScheduleModelMixin, CloneModelMixin,
+                      NextMemberModelMixin, BaseUuidModel):
 
     household_structure = models.ForeignKey(HouseholdStructure)
 
