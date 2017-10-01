@@ -1,15 +1,13 @@
 import arrow
-
 from dateutil.relativedelta import relativedelta
 from django.db import models, transaction
-
 from edc_base.utils import age, get_utcnow
 from edc_constants.choices import YES_NO_NA, ALIVE
 from edc_registration.models import RegisteredSubject
 
 from ..choices import DETAILS_CHANGE_REASON
-from ..constants import HEAD_OF_HOUSEHOLD
 from ..clone import CloneMembersExistError
+from ..constants import HEAD_OF_HOUSEHOLD
 
 
 class CloneRegisteredSubjectError(Exception):
@@ -48,7 +46,6 @@ class CloneModelMixin(models.Model):
         verbose_name=('If YES, please specify the reason'),
         max_length=30,
         null=True,
-        blank=True,
         choices=DETAILS_CHANGE_REASON,
         help_text=('if personal detail changed indicate the reason.'))
 
